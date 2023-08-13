@@ -185,7 +185,7 @@
     width: 90%;
     word-wrap: break-word;
     justify-self: flex-start;
-    background-color: bisque;
+    background-color: rgba(91, 178, 232, 0.915);
 }
  
 .cmntxtdiv button{
