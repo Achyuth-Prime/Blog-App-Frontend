@@ -1,6 +1,8 @@
-#Backend Code:
+## Backend Code:
+
 https://github.com/vishal1361/Blog-Application
 
-#Authors:
-@Achyuth-Prime
-@vishal-1361
+## Authors
+
+- [@Achyuth-Prime](https://github.com/Achyuth-Prime?tab=repositories)
+- [@vishal1361](https://github.com/vishal1361?tab=repositories)
