@@ -1,0 +1,313 @@
+.app{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(board.jpg);
+    object-fit: cover;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #16222a, #3a6073);
+    color: brown;
+    height: 20%;
+    font-size: larger;
+    /* padding: 20px 20px; */
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    gap: 15px;
+    color: brown;
+}
+
+.menu .menu-btn {
+    background-color: brown;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.6s ease-in-out;
+}
+
+.menu-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: yellow;
+    color: black;
+}
+
+.posts{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+
+}
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));;
+    gap: 30px;
+    
+    margin: 10px 100px;
+    margin-top: 30px;
+}
+
+
+.post-link{
+    text-decoration: none;
+    color: black;
+}
+
+.blog {
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+    background-color: lightgreen;
+    min-width: 300px; 
+    min-height: 400px;   
+    position: relative;
+}
+
+.expandpost{
+    height: 100%;
+}
+
+.blog:hover {
+    transform: scale(1.05); 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.blogdeletebutton,.blogeditbutton{
+    width: 50%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.blogdeletebutton:hover {
+    background-color: rgb(229, 77, 77);    
+}
+
+.blogeditbutton:hover{
+    background-color: rgb(232, 209, 60);
+}
+
+.blogdeletebutton{
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-right: 0.5px solid black;
+}
+
+.blogeditbutton{
+    right: 0;
+    border-bottom-right-radius: 10px;
+    border-left: 0.5px solid black;
+}
+
+.content{
+    padding: 0px 8px;
+    text-align: center;
+}
+
+.deets-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deets-container h2,.deets-content{
+    text-align: center;
+}
+
+.deets-container p{
+    margin: auto;
+    width:70%;
+}
+
+.Comments{
+    /* text-align: center; */
+    width: 100%;
+}
+
+.Comments h2{
+    margin: 20px;
+    padding: 10px ;
+}
+
+.Comments ul{
+    margin: 0;
+    padding: 0;
+}
+
+.Comments li{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.cmntform{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cmntform textarea,.descedit,.commentedit{
+    width: 91%;
+    height: 7rem;
+}
+
+.cmntform button{
+    margin-left: 1rem;
+}
+
+.cmntxtdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: grey;
+}
+
+.cmntxtdiv li{
+    width: 90%;
+    word-wrap: break-word;
+    justify-self: flex-start;
+    background-color: bisque;
+}
+ 
+.cmntxtdiv button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+} 
+
+.newpost{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newpost input{
+    height: 1.5rem;
+}
+
+.newpost h2 {
+    text-align: center;
+}
+
+.newpost form {
+    /* background-color: burlywood; */
+    /* background-image: url(city.jpg); */
+    background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
+    border-radius: 25px;
+    /* width: 400px; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 40px 40px;
+}
+
+.newpost form span{
+    font-weight: bold;
+}
+
+.newpost form button {
+    background-color: lightseagreen;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Blurred background */
+    z-index: 1;
+}
+  
+.modal {
+    background-color: #fff;
+    width: 50%;
+    height: 45%;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.modal-content input{
+    text-align: center;
+}
+
+.editbuttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.editbuttons button{
+    cursor: pointer;
+}
+
+.modal-comment {
+    background-color: #fff;
+    width: 30%;
+    height: 20%;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.tagul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: lightslategray;
+}
+
+.searchBar-wrap {
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.searchBar-wrap input {
+    background-color: #f0f0f0;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.tagfilter {
+    width: 50%;
+    font-size: large;
+}
+
+.searchInput{
+    width: 25%;
+    height: 1.75rem;
+    font-size: large;
+}
